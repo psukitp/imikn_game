@@ -15,7 +15,7 @@ public class CardGame : MonoBehaviour
     private void OnMouseDrag()
     {
         var newPos = GetMousePosition() + dragOffset;
-        this.transform.position = Vector3.MoveTowards(this.transform.position, newPos, speedDrag * Time.deltaTime);  
+        this.transform.position = Vector3.MoveTowards(this.transform.position, newPos, speedDrag * Time.deltaTime);
     }
     private Vector3 GetMousePosition()
     {
