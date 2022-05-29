@@ -12,7 +12,7 @@ public class MainPerson : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-        speed = 20;
+        speed = 30;
         scale = transform.localScale.x;
         anim = GetComponent<Animator>();
     }
