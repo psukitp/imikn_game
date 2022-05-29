@@ -19,9 +19,6 @@ public class GoToCardGame : MonoBehaviour
             if (Mathf.Abs(currentDistance.x) < normalDistance.x &&
                 Mathf.Abs(currentDistance.y) < normalDistance.y)
             {
-                //Debug.Log(SceneManager.GetActiveScene());
-                //SceneManager.LoadScene("CardGame");
-                Debug.Log(currentDistance.x + " " + currentDistance.y);
                 cardGameUI.transform.position = new Vector3(cardGameUI.transform.position.x,
                     cardGameUI.transform.position.y, -5);
                 cardGameUI.SetActive(true);
