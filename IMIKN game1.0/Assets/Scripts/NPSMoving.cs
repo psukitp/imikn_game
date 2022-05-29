@@ -73,7 +73,6 @@ public class NPSMoving : MonoBehaviour
                 }
             }
         }
-        Debug.Log(verticalMoving + " " + horizontalMoving);
         Vector2 movement = new Vector2(horizontalMoving, verticalMoving);
         body.velocity = movement;
     }

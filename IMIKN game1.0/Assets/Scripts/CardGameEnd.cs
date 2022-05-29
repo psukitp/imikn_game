@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class CardGameEnd : MonoBehaviour
 {
+    public GameObject cardGameUI;
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(SceneManager.GetActiveScene());
-        SceneManager.LoadScene("Game");
+        Debug.Log(collision.name);
+        cardGameUI.SetActive(false);
     }
 }
